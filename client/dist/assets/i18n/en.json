@@ -288,6 +288,9 @@
     "chart.property-axis-y4-max": "Y4 Max",
     "chart.property-script": "Script data source",
 
+    "chart.rangetype-last1h": "Last 1 hours",
+    "chart.rangetype-last2h": "Last 2 hours",
+    "chart.rangetype-last4h": "Last 4 hours",
     "chart.rangetype-last8h": "Last 8 hours",
     "chart.rangetype-last1d": "Last day",
     "chart.rangetype-last3d": "Last 3 days",
@@ -1433,6 +1436,7 @@
     "dlg.app-settings-daqstore-database": "Database name",
     "dlg.app-settings-daqstore-username": "Username",
     "dlg.app-settings-daqstore-password": "Password",
+    "dlg.app-settings-daqstore-alarmArchiveToTD": "Alarm Archive to TDengine (> 10 seconds)",
     "store.retention-none": "Disabled",
     "store.retention-day1": "1 day",
     "store.retention-days2": "2 days",

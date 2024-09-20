@@ -343,7 +343,8 @@ export const myCustomTooltipDefaults: MatTooltipDefaultOptions = {
         WebcamPlayerComponent,
         WebcamPlayerDialogComponent,
         ResizeDirective,
-        EditorViewsListComponent
+        EditorViewsListComponent,
+        MetaShapesComponent
     ],
     imports: [
         BrowserModule,
