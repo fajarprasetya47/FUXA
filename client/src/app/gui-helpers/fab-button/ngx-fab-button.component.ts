@@ -47,6 +47,7 @@ import {
     transform: scale(1, 1) translate3d(0, 0, 0);
     cursor: pointer;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+    background-color: #005fb9;
   }
   .fab-menu .fab-toggle:hover {
     transform: scale(1.2, 1.2) translate3d(0, 0, 0);
@@ -73,7 +74,7 @@ import {
   `],
     template: `
     <div class="fab-menu" [class.active]="(state | async).display">
-        <a class="fab-toggle" (click)="toggle()" (touchend)="toggle()" [style.backgroundColor]="color">
+        <a class="fab-toggle" (click)="toggle()" (touchend)="toggle()">
           <i class="material-icons" *ngIf="!opened"> {{icon}} </i>
           <i class="material-icons" *ngIf="opened"> {{iconOpen}} </i>
         </a>
@@ -92,7 +93,8 @@ export class NgxFabButtonComponent implements AfterContentInit, OnDestroy, OnCha
     @Input() direction: string;
     @Input() spaceBetweenButtons = 45;
     @Input() open: Subject<boolean>;
-    @Input() color = '#dd0031';
+    @Input() color = '#005fb9';
+    // @Input() color = '#dd0031';
     @Input() disabled = false;
     @Output() events: Subject<any> = new Subject();
     @Output() opened = false;

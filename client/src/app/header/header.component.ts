@@ -29,7 +29,7 @@ export class HeaderComponent implements AfterViewInit, OnDestroy {
     @ViewChild('tutorial', {static: false}) tutorial: TutorialComponent;
     @ViewChild('fileImportInput', {static: false}) fileImportInput: any;
 
-    darkTheme = true;
+    darkTheme = false;
     editorMode = false;
     savededitor = false;
     private subscriptionShowHelp: Subscription;

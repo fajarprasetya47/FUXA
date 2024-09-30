@@ -5,109 +5,81 @@
 @font-face {
     font-family: "myicons";
     src: url("./assets/fonts/icomoon.eot?22kwk4");
-    src: url("./assets/fonts/icomoon.eot?22kwk4#iefix")
-            format("embedded-opentype"),
+    src: url("./assets/fonts/icomoon.eot?22kwk4#iefix") format("embedded-opentype"),
         url("./assets/fonts/icomoon.ttf?22kwk4") format("truetype"),
         url("./assets/fonts/icomoon.woff?22kwk4") format("woff"),
         url("./assets/fonts/icomoon.svg?22kwk4#icomoon") format("svg");
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: "Roboto-Thin";
     src: local("Roboto Thin"), local("Roboto-Thin"),
-        url("./assets/fonts/roboto-thin/roboto-thin-webfont.woff")
-            format("woff"),
-        url("./assets/fonts/roboto-thin/roboto-thin-webfont.woff2")
-            format("woff2"),
-        url("./assets/fonts/roboto-thin/roboto-thin-webfont.ttf")
-            format("truetype"),
+        url("./assets/fonts/roboto-thin/roboto-thin-webfont.woff") format("woff"),
+        url("./assets/fonts/roboto-thin/roboto-thin-webfont.woff2") format("woff2"),
+        url("./assets/fonts/roboto-thin/roboto-thin-webfont.ttf") format("truetype"),
         url("./assets/fonts/roboto-thin/roboto-thin-webfont.svg") format("svg");
 }
 
 @font-face {
     font-family: "Roboto-Light";
     src: local("Roboto Light"), local("Roboto-Light"),
-        url("./assets/fonts/roboto-light/roboto-light-webfont.woff")
-            format("woff"),
-        url("./assets/fonts/roboto-light/roboto-light-webfont.woff2")
-            format("woff2"),
-        url("./assets/fonts/roboto-light/roboto-light-webfont.ttf")
-            format("truetype"),
-        url("./assets/fonts/roboto-light/roboto-light-webfont.svg")
-            format("svg");
+        url("./assets/fonts/roboto-light/roboto-light-webfont.woff") format("woff"),
+        url("./assets/fonts/roboto-light/roboto-light-webfont.woff2") format("woff2"),
+        url("./assets/fonts/roboto-light/roboto-light-webfont.ttf") format("truetype"),
+        url("./assets/fonts/roboto-light/roboto-light-webfont.svg") format("svg");
 }
 
 @font-face {
     font-family: "Roboto-Regular";
     src: local("Roboto Regular"), local("Roboto-Regular"),
-        url("./assets/fonts/roboto-regular/roboto-regular-webfont.woff")
-            format("woff"),
-        url("./assets/fonts/roboto-regular/roboto-regular-webfont.woff2")
-            format("woff2"),
-        url("./assets/fonts/roboto-regular/roboto-regular-webfont.ttf")
-            format("truetype"),
-        url("./assets/fonts/roboto-regular/roboto-regular-webfont.svg")
-            format("svg");
+        url("./assets/fonts/roboto-regular/roboto-regular-webfont.woff") format("woff"),
+        url("./assets/fonts/roboto-regular/roboto-regular-webfont.woff2") format("woff2"),
+        url("./assets/fonts/roboto-regular/roboto-regular-webfont.ttf") format("truetype"),
+        url("./assets/fonts/roboto-regular/roboto-regular-webfont.svg") format("svg");
 }
 
 @font-face {
     font-family: "Roboto-Medium";
     src: local("Roboto Medium"), local("Roboto-Medium"),
-        url("./assets/fonts/roboto-medium/roboto-medium-webfont.woff")
-            format("woff"),
-        url("./assets/fonts/roboto-medium/roboto-medium-webfont.woff2")
-            format("woff2"),
-        url("./assets/fonts/roboto-medium/roboto-medium-webfont.ttf")
-            format("truetype"),
-        url("./assets/fonts/roboto-medium/roboto-medium-webfont.svg")
-            format("svg");
+        url("./assets/fonts/roboto-medium/roboto-medium-webfont.woff") format("woff"),
+        url("./assets/fonts/roboto-medium/roboto-medium-webfont.woff2") format("woff2"),
+        url("./assets/fonts/roboto-medium/roboto-medium-webfont.ttf") format("truetype"),
+        url("./assets/fonts/roboto-medium/roboto-medium-webfont.svg") format("svg");
 }
 
 @font-face {
     font-family: "Quicksand-Regular";
     src: local("Quicksand"), local("Quicksand-Regular"),
-        url("./assets/fonts/quicksand-regular\Quicksand-Regular.woff")
-            format("woff"),
-        url("./assets/fonts/quicksand-regular\Quicksand-Regular.woff2")
-            format("woff2"),
-        url("./assets/fonts/quicksand-regular\Quicksand-Regular.ttf")
-            format("truetype");
+        url("./assets/fonts/quicksand-regular\Quicksand-Regular.woff") format("woff"),
+        url("./assets/fonts/quicksand-regular\Quicksand-Regular.woff2") format("woff2"),
+        url("./assets/fonts/quicksand-regular\Quicksand-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Quicksand-Medium";
     src: local("Quicksand Medium"), local("Quicksand-Medium"),
-        url("./assets/fonts/quicksand-medium\Quicksand-Medium.woff")
-            format("woff"),
-        url("./assets/fonts/quicksand-medium\Quicksand-Medium.woff2")
-            format("woff2"),
-        url("./assets/fonts/quicksand-medium\Quicksand-Medium.ttf")
-            format("truetype");
+        url("./assets/fonts/quicksand-medium\Quicksand-Medium.woff") format("woff"),
+        url("./assets/fonts/quicksand-medium\Quicksand-Medium.woff2") format("woff2"),
+        url("./assets/fonts/quicksand-medium\Quicksand-Medium.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Quicksand-Bold";
     src: local("Quicksand"), local("Quicksand-Bold"),
-        url("./assets/fonts/quicksand-bold\Quicksand-Bold.woff")
-            format("woff"),
-        url("./assets/fonts/quicksand-bold\Quicksand-Bold.woff2")
-            format("woff2"),
-        url("./assets/fonts/quicksand-bold\Quicksand-Bold.ttf")
-            format("truetype");
+        url("./assets/fonts/quicksand-bold\Quicksand-Bold.woff") format("woff"),
+        url("./assets/fonts/quicksand-bold\Quicksand-Bold.woff2") format("woff2"),
+        url("./assets/fonts/quicksand-bold\Quicksand-Bold.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Roboto-Bold";
     src: local("Roboto Bold"), local("Roboto-Bold"),
-        url("./assets/fonts/roboto-bold/roboto-bold-webfont.woff")
-            format("woff"),
-        url("./assets/fonts/roboto-bold/roboto-bold-webfont.woff2")
-            format("woff2"),
-        url("./assets/fonts/roboto-bold/roboto-bold-webfont.ttf")
-            format("truetype"),
-        url("./assets/fonts/roboto-bold/roboto-bold-webfont.svg")
-		    format("svg");
+        url("./assets/fonts/roboto-bold/roboto-bold-webfont.woff") format("woff"),
+        url("./assets/fonts/roboto-bold/roboto-bold-webfont.woff2") format("woff2"),
+        url("./assets/fonts/roboto-bold/roboto-bold-webfont.ttf") format("truetype"),
+        url("./assets/fonts/roboto-bold/roboto-bold-webfont.svg") format("svg");
 }
 
 /* System and General */
@@ -155,18 +127,19 @@ app-root {
 }
 
 .default-color {
-    color:rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.8);
 }
 
 /* toaster overwrite */
 /*-------------------*/
-#toast-container > div {
+#toast-container>div {
     font-size: 13px !important;
     -moz-border-radius: unset !important;
     -webkit-border-radius: unset !important;
     border-radius: unset !important;
 }
-#toast-container > :hover {
+
+#toast-container> :hover {
     -moz-border-radius: unset !important;
     -webkit-border-radius: unset !important;
     border-radius: unset !important;
@@ -198,6 +171,7 @@ app-root {
     /* text-shadow: 0 1px 0 #ffffff; */
     /* opacity: 0.8; */
 }
+
 .toast-close-button:hover,
 .toast-close-button:focus {
     color: #ffffff !important;
@@ -205,6 +179,7 @@ app-root {
     /* cursor: pointer; */
     /* opacity: 0.4; */
 }
+
 /*Additional properties for button version
    iOS requires the button element instead of an anchor tag.
    If you want the anchor version, it requires `href="#"`.*/
@@ -239,9 +214,11 @@ app-root {
     border-radius: none !important; */
     /* color: #FFFFFF; */
 }
+
 .toast-container .toast:hover {
     box-shadow: 0 0 12px #000000 !important;
 }
+
 /* https://github.com/FortAwesome/Font-Awesome-Pro/blob/master/advanced-options/raw-svg/regular/info-circle.svg */
 /* .toast-info {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='512' height='512'%3E%3Cpath fill='rgb(255,255,255)' d='M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z'/%3E%3C/svg%3E");
@@ -292,7 +269,8 @@ app-root {
     text-indent: -9999px;
     width: 30px;
     height: 30px;
-    background: url(assets/images/logo.svg);
+    background: url(assets/images/linkra-logo.png);
+    /* background: url(assets/images/logo.svg); */
     background-size: 30px 30px;
 }
 
@@ -347,10 +325,12 @@ app-root {
     min-height: 50px;
     margin: 5px;
 }
+
 .menu-item-icon {
     min-height: 60px;
     margin: 5px;
 }
+
 .menu-item-block {
     min-height: 80px;
     margin: 5px;
@@ -364,8 +344,8 @@ app-root {
 .menu-item-content-icon {
     height: 50px;
     width: 55px;
-    display:table-cell;
-    vertical-align:middle;
+    display: table-cell;
+    vertical-align: middle;
     padding-top: 4px;
 }
 
@@ -482,7 +462,7 @@ app-root {
     /* padding: 15px 0px 4px 0px; */
 }
 
-.my-form-field > span {
+.my-form-field>span {
     display: block;
     font-size: 12px;
     position: relative;
@@ -490,11 +470,13 @@ app-root {
     left: 3px;
     opacity: 0.5;
     overflow: hidden;
-    white-space:nowrap;
-    text-overflow:ellipsis;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
-.my-form-field input, mat-select, textarea {
+.my-form-field input,
+mat-select,
+textarea {
     font-size: 13px;
     border: unset;
     /* border: 0.5px solid rgba(0,0,0,0.1); */
@@ -503,7 +485,8 @@ app-root {
     font-size: 13px;
 }
 
-.my-form-field input, textarea {
+.my-form-field input,
+textarea {
     padding: 6px 3px 7px 4px;
     background-color: var(--formInputBackground);
     color: var(--formInputColor);
@@ -523,7 +506,7 @@ app-root {
 
 
 .my-form-field-info {
-    color:rgba(210, 210, 210, 0.5);
+    color: rgba(210, 210, 210, 0.5);
     padding-left: 10px;
     display: inline-block;
     height: 18px;
@@ -538,15 +521,15 @@ app-root {
 }
 
 .my-form-field-permission {
-    width:80px;
-    height:28px;
+    width: 80px;
+    height: 28px;
     background-color: var(--formInputBackground);
     color: var(--formInputColor);
 }
 
 .my-form-field-bitmask {
-    width:65px;
-    height:28px;
+    width: 65px;
+    height: 28px;
     background-color: var(--formInputBackground);
     color: var(--formInputColor);
     cursor: pointer;
@@ -563,11 +546,11 @@ app-root {
     left: 0px;
     font-size: 13px;
     width: 35px;
-    text-align:left;
+    text-align: left;
 }
 
 .my-form-field-link {
-    position:absolute;
+    position: absolute;
     bottom: 0px;
     right: 0px;
     height: 28px;
@@ -608,12 +591,16 @@ mat-toolbar-row {
 .material-icons.md-18 {
     font-size: 18px;
 }
+
 .material-icons.md-24 {
     font-size: 24px;
-} /* Default */
+}
+
+/* Default */
 .material-icons.md-36 {
     font-size: 36px;
 }
+
 .material-icons.md-48 {
     font-size: 48px;
 }
@@ -760,7 +747,7 @@ mat-toolbar-row {
     transition: margin-left 300ms ease-in-out, background-color 300ms;
 }
 
-.toggle-button > .inner-circle {
+.toggle-button>.inner-circle {
     background: white;
     width: 50%;
     height: 100%;
@@ -778,7 +765,7 @@ mat-toolbar-row {
     background-color: #2196f3;
 }
 
-.toggle-button.active > .inner-circle {
+.toggle-button.active>.inner-circle {
     margin-left: 50%;
     background-color: #2196f3;
 }
@@ -808,14 +795,17 @@ mat-toolbar-row {
         overflow-y: scroll;
         overflow-x: hidden;
     }
+
     .dialog-mdsd-content {
         height: 605px !important;
         overflow-y: scroll;
         overflow-x: hidden;
     }
+
     .dialog-mdsd-main {
         height: 700px !important;
     }
+
     .dialog-mdsd-table {
         height: 500px !important;
     }
@@ -837,6 +827,20 @@ mat-toolbar-row {
         overflow-y: scroll;
         overflow-x: hidden;
     }
+}
+
+::ng-deep .tooltip {
+    background-color: var(--defaultBackground);
+}
+
+.mat-dialog-container {
+    background-color: var(--defaultBackground);
+    /* background-color: var(--headerBackground); */
+}
+
+.mat-select-panel {
+    background-color: var(--defaultBackground);
+    /* background-color: var(--headerBackground); */
 }
 
 /* Dialog */
@@ -875,7 +879,7 @@ mat-toolbar-row {
     border: 1px solid rgba(0, 0, 0, 0.1) !important;
     font-size: 13px;
     padding: 5px 2px 6px 3px !important;
-    color:gray;
+    color: gray;
 }
 
 .input-color input:focus {
@@ -900,19 +904,19 @@ mat-toolbar-row {
     padding-bottom: 0.3rem;
 }
 
-#overlay > .ut-head {
+#overlay>.ut-head {
     display: block;
     border-bottom: 1px solid;
     /* margin-bottom: 10px; */
     padding: 0.3rem 0.5rem;
 }
 
-#overlay > .ut-serie {
+#overlay>.ut-serie {
     padding: 0.4rem 0.5rem 0 0.5rem;
     display: block;
 }
 
-#overlay > .ut-serie .ut-marker {
+#overlay>.ut-serie .ut-marker {
     display: inline-block;
     width: 0.6em;
     height: 0.6em;
@@ -922,7 +926,7 @@ mat-toolbar-row {
     /* background: rgba(255, 0, 0, 0.3); */
 }
 
-#overlay > .ut-serie .ut-value {
+#overlay>.ut-serie .ut-value {
     display: inline-block;
     margin-left: 4px;
 }
@@ -946,7 +950,10 @@ mat-toolbar-row {
 .color-picker .type-policy {
     top: 185px !important;
 }
-.color-picker > .hex-text, .rgba-text, .hsla-text {
+
+.color-picker>.hex-text,
+.rgba-text,
+.hsla-text {
     padding: 0px 8px !important;
 }
 
@@ -954,7 +961,8 @@ mat-toolbar-row {
     padding: 0px 8px !important;
 }
 
-.color-picker .hex-text .box input, .color-picker input {
+.color-picker .hex-text .box input,
+.color-picker input {
     background-color: #ffffff !important;
 }
 
@@ -975,7 +983,7 @@ mat-toolbar-row {
 }
 
 .light-dialog-container .mat-dialog-container {
-    padding: 5px 0px  !important;
+    padding: 5px 0px !important;
     color: unset !important;
 }
 
@@ -994,7 +1002,7 @@ mat-toolbar-row {
 
 .gauge-property-button {
     background-color: dimgrey;
-    color:white;
+    color: white;
 }
 
 /* standard */
@@ -1003,7 +1011,7 @@ mat-toolbar-row {
 }
 
 .message-error {
-    color:#ff5151;
+    color: #ff5151;
 }
 
 .tohide {
@@ -1138,7 +1146,7 @@ mat-toolbar-row {
     font-size: 14px;
 }
 
-.container-split-ver > div {
+.container-split-ver>div {
     flex: 1;
 }
 
@@ -1160,6 +1168,7 @@ mat-toolbar-row {
     font-size: 12px !important;
     font-weight: bold;
 }
+
 .wp100 {
     width: 100%;
 }

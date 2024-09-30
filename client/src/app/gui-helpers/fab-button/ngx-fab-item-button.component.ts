@@ -35,7 +35,8 @@ import {
   }
   .content {
     z-index: 9999;
-    background: rgba(68,138,255, 1);
+    /* background: rgba(68,138,255, 1); */
+    background: #005fb9;
     margin-left: 0px;
     line-height: 25px;
     color: white;
