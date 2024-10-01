@@ -829,8 +829,14 @@ mat-toolbar-row {
     }
 }
 
-::ng-deep .tooltip {
+/* ::ng-deep .tooltip {
     background-color: var(--defaultBackground);
+} */
+
+.mat-tooltip {
+    background-color: var(--defaultBackground);
+    color: #000 !important;
+    border: 1px solid #ddd;
 }
 
 .mat-dialog-container {

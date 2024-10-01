@@ -33,6 +33,9 @@ import {
   .item.disabled .fab-item {
     background-color: lightgray;
   }
+  .item:hover {
+    opacity: 0.8;
+  }
   .content {
     z-index: 9999;
     /* background: rgba(68,138,255, 1); */

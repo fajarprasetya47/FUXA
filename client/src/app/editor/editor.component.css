@@ -20,6 +20,10 @@
     }
 }
 
+.svg-tooltip {
+    background: #fff;
+}
+
 #svg_editor_container {
     background: #aaa;
     height: 100%;
@@ -42,20 +46,23 @@
 }
 
 .svg-workarea-leftbar-h {
-    max-height: 23px;
+    /* max-height: 23px; */
+    max-height: 30px;
     text-align: center;
     vertical-align: middle;
     padding-left: 0px;
     padding-right: 0px;
     border-top: 1px solid var(--toolboxBorder);
     margin-bottom: 0px;
-    box-shadow: 0px 1px 3px 0px #000;
+    /* box-shadow: 0px 1px 3px 0px #000; */
+    box-shadow: 0px 1px 3px 0px #bbb;
 }
 
 .svg-workarea-leftbar-h span {
-    padding-top: 5px !important;
+    /* padding-top: 5px !important; */
     padding-left: 3px;
-    font-size: 11px;
+    font-size: 12px;
+    font-weight: 500;
 }
 
 /* .mat-expansion-panel-content {
@@ -73,7 +80,7 @@
  }
 
  .svg-workarea-flybar-h span {
-     padding-top: 5px !important;
+     /* padding-top: 5px !important; */
      padding-left: 3px;
      font-size: 11px;
  }
@@ -206,10 +213,12 @@
 .svg-tool-button span {
     display: block;
     margin: auto;
+    color: #fff;
 }
 
 .svg-tool-button:hover {
-    background: rgba(0, 0, 0, 0.5);
+    /* background: rgba(0, 0, 0, 0.5); */
+    opacity: 0.7;
 }
 
 .svg-tool-active, .svg-tool-active:active, .svg-tool-active:hover {
@@ -242,10 +251,12 @@
     line-height: 34px;
     margin-left: 5px;
     margin-right: 5px;
+    background: transparent;
+    color: #fff;
 }
 
 .main-btn mat-icon {
-    font-size: 24px;
+    font-size: 18px;
     height: unset;
     width: unset;
 }
@@ -326,7 +337,8 @@
 }
 
 .leftbar-item {
-    padding: 3px 0px 1px 0px;
+    padding: 6px 0px 4px 0px;
+    /* padding: 5px 0px 1px 0px; */
     display: flow-root;
 }
 
@@ -367,8 +379,10 @@
 }
 
 ::ng-deep .mat-menu-item {
-    font-size: 11px;
-    height: 30px !important;
+    font-size: 14px;
+    /* font-size: 11px; */
+    height: 32px !important;
+    /* height: 30px !important; */
     line-height: unset !important;
 }
 
@@ -396,6 +410,7 @@
     bottom: 0;
     height: 30px;
     overflow: visible;
+    background: unset;
 }
 
 .zoom-menu {

@@ -1,0 +1,14 @@
+-- Start Server --
+cd ./server
+npm i
+npm start
+
+Debug
+-- Start Client -- 
+cd ./client
+npm i
+npm start
+
+Build
+cd ./client
+npm run build
