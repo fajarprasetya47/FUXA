@@ -1,0 +1,61 @@
+FROM node:18-bookworm
+
+# ARG NODE_SNAP=false
+
+
+# Change working directory
+WORKDIR /app
+
+# Clone FUXA repository
+# RUN git clone https://github.com/frangoteam/FUXA.git
+
+COPY . .
+
+RUN apt-get update && apt-get install -y dos2unix
+# Install build dependencies for node-odbc
+RUN apt-get update && apt-get install -y build-essential unixodbc unixodbc-dev
+
+# Convert the script to Unix format and make it executable
+RUN dos2unix /app/odbc/install_odbc_drivers.sh && chmod +x /app/odbc/install_odbc_drivers.sh
+
+# Install options snap7
+# RUN if [ "$NODE_SNAP" = "true" ]; then \
+#     npm install node-snap7; \
+#     fi
+
+# Workaround for sqlite3 https://stackoverflow.com/questions/71894884/sqlite3-err-dlopen-failed-version-glibc-2-29-not-found
+RUN apt-get update && \
+    apt-get install -y build-essential libsqlite3-dev && \
+    apt-get install -y sqlite3 libsqlite3-dev
+
+WORKDIR /app/odbc
+RUN ./install_odbc_drivers.sh
+
+# Change working directory
+WORKDIR /app
+
+# Copy odbcinst.ini to /etc
+RUN cp /app/odbc/odbcinst.ini /etc/odbcinst.ini
+
+# Install Fuxa server
+# WORKDIR /app/server
+# RUN npm install
+
+# Add project files
+# ADD . /app
+
+WORKDIR /app/client
+RUN npm install
+RUN npm run build
+
+# Set working directory
+WORKDIR /app/server
+RUN npm install
+RUN npm install --build-from-source sqlite3
+
+# Expose port
+EXPOSE 1881
+
+# Start the server
+ENTRYPOINT ["node", "main.js"]
+# CMD [ "npm", "start" ]
