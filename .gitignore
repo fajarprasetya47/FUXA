@@ -91,4 +91,4 @@ dist/
 server/_appdata
 #server/package-lock.json
 #client/package-lock.json
-client/dist
+client/dist/
