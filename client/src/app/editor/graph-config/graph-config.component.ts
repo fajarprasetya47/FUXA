@@ -102,7 +102,8 @@ export class GraphConfigComponent implements OnInit {
     onAddGraphSource(graph: Graph) {
         let dialogRef = this.dialog.open(DeviceTagSelectionComponent, {
             disableClose: true,
-            position: { top: '60px' },
+            position: { top: '30px', },
+            maxHeight : '90vh',
             data: <DeviceTagSelectionData> {
                 variableId: null,
                 multiSelection: false

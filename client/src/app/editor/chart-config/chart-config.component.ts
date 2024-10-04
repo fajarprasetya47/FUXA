@@ -118,7 +118,8 @@ export class ChartConfigComponent implements OnInit {
     onAddChartLine(chart: Chart) {
         let dialogRef = this.dialog.open(DeviceTagSelectionComponent, {
             disableClose: true,
-            position: { top: '60px' },
+            position: { top: '30px', },
+            maxHeight : '90vh',
             data: <DeviceTagSelectionData> {
                 variableId: null,
                 multiSelection: true

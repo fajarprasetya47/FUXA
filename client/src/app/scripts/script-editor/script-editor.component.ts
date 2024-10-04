@@ -190,7 +190,8 @@ export class ScriptEditorComponent implements OnInit, OnDestroy {
         const withMultTagsParam = sysfnc.params?.find(p => p === 'array');
         let dialogRef = this.dialog.open(DeviceTagSelectionComponent, {
             disableClose: true,
-            position: { top: '60px' },
+            position: { top: '30px', },
+            maxHeight : '90vh',
             data: <DeviceTagSelectionData> {
                 variableId: null,
                 multiSelection:  withMultTagsParam ? true : false,
@@ -220,7 +221,8 @@ export class ScriptEditorComponent implements OnInit, OnDestroy {
     onSetTestTagParam(param: ScriptParam) {
         let dialogRef = this.dialog.open(DeviceTagSelectionComponent, {
             disableClose: true,
-            position: { top: '60px' },
+            position: { top: '30px', },
+            maxHeight : '90vh',
             data: <DeviceTagSelectionData> {
                 variableId: null,
                 multiSelection: false,

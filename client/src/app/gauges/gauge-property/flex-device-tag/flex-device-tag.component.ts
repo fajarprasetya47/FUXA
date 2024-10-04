@@ -118,7 +118,8 @@ export class FlexDeviceTagComponent implements OnInit {
     onBindTag() {
         let dialogRef = this.dialog.open(DeviceTagSelectionComponent, {
             disableClose: true,
-            position: { top: '60px' },
+            position: { top: '30px', },
+            maxHeight : '90vh',
             data: <DeviceTagSelectionData> {
                 variableId: this.variableId
             }
