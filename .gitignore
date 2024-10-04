@@ -77,13 +77,15 @@ _db/
 # ex.packages
 _pkg/
 #resources images
-_images/
+# _images/
 
 _reports/
 
 _certificates/
 
 test/
+
+dist/
 
 # appdata
 server/_appdata
