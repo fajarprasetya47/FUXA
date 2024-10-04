@@ -12,3 +12,10 @@ npm start
 Build
 cd ./client
 npm run build
+
+-- Update to docker --
+Build client first
+scp -r -P 9341 "client/dist" dev@10.104.0.4:/home/dev
+
+docker cp /home/dev/dist scada:/usr/src/app/FUXA/client
+docker restart scada
