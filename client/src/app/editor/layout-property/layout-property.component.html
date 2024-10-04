@@ -62,7 +62,7 @@
                         </div>      
                     </div>
                     <div>
-                        <div style="display: inline-block;margin-left: 180px;">
+                        <div style="display: inline-block;margin-left: 100px;">
                             <button mat-icon-button style="color: rgba(255,255,255,1);background-color: rgba(68,138,255, 1);">
                                 <mat-icon>menu</mat-icon>
                             </button>
@@ -363,7 +363,7 @@
                 </div>
             </mat-tab>
             <mat-tab label="{{'dlg.layout-lbl-custom-styles' | translate}}">
-                <div class="tab-container">
+                <div class="tab-container" style="min-height: 300px;">
                     <ngx-codemirror #CodeMirror [(ngModel)]="data.layout.customStyles" [options]="codeMirrorOptions" ></ngx-codemirror>
                 </div>                    
             </mat-tab>

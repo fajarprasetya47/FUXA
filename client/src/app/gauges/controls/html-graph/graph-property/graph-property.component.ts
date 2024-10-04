@@ -154,8 +154,12 @@ export class GraphPropertyComponent implements OnInit, OnDestroy {
 
     onEditNewGraph() {
         let dialogRef = this.dialog.open(GraphConfigComponent, {
-            position: { top: '60px' },
-            minWidth: '1090px', width: '1090px',
+            position: { top: '30px' },
+            // minWidth: '1090px', 
+            // width: '1090px',
+            maxWidth: '90vw', 
+            width: '90vw',
+            maxHeight: '90vh',
             data: { type: (this.graphType === GraphType.bar) ? 'bar' : 'pie' }
         });
         dialogRef.afterClosed().subscribe((result: IDataGraphResult) => {

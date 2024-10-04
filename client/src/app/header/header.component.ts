@@ -95,7 +95,9 @@ export class HeaderComponent implements AfterViewInit, OnDestroy {
     onSetup() {
         this.projectService.saveProject(SaveMode.Current);
         let dialogRef = this.dialog.open(SetupComponent, {
-            position: { top: '60px' },
+            position: { top: '30px',  },
+            maxHeight : '90vh',
+
         });
     }
 

@@ -114,8 +114,12 @@ export class ChartPropertyComponent implements OnInit, OnDestroy {
 
     onEditNewChart() {
         let dialogRef = this.dialog.open(ChartConfigComponent, {
-            position: { top: '60px' },
-            minWidth: '1090px', width: '1090px'
+            position: { top: '30px' },
+            // minWidth: '1090px', 
+            // width: '1090px',
+            maxWidth: '90vw', 
+            width: '90vw',
+            maxHeight: '90vh',
         });
         dialogRef.afterClosed().subscribe((result: IDataChartResult) => {
             if (result) {

@@ -1,16 +1,16 @@
 :host {
     .content {
-        min-width: 950px;
-        min-height: 700px;
+        // min-width: 950px;
+        // min-height: 700px;
     }
 
     .tab-container {
         display: block;
         margin-top: 10px;
         width: 100%;
-        min-height: 500px;
+        // min-height: 500px;
         overflow-y: auto;
-        height: 650px;
+        // height: 650px;
     }
 
     .layout-menu-item-icon {
@@ -32,6 +32,7 @@
 
     .nav-config {
         overflow-y: auto;
+        margin-block: 16px;
 
         .config-left {
             display: inline-block;

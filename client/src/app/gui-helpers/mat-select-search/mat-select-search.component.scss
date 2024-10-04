@@ -51,3 +51,9 @@ $multiple-check-width: 33px;
     // margin-top: -50px;
     margin-top: 40px;
 }
+
+::ng-deep .cdk-overlay-pane {
+    /* correct offsetY so that the selected option is at the position of the select box when opening */
+    // margin-top: -50px;
+    margin-top: 40px;
+}

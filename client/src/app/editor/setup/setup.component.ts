@@ -39,8 +39,12 @@ export class SetupComponent {
     onChartConfig() {
         this.onNoClick();
         let dialogRef = this.dialog.open(ChartConfigComponent, {
-            position: { top: '60px' },
-            minWidth: '1090px', width: '1090px'
+            position: { top: '30px' },
+            // minWidth: '1090px', 
+            // width: '1090px',
+            maxWidth: '90vw', 
+            width: '90vw',
+            maxHeight: '90vh',
         });
         dialogRef.afterClosed().subscribe();
     }
@@ -52,8 +56,12 @@ export class SetupComponent {
     onGraphConfig(type: string) {
         this.onNoClick();
         let dialogRef = this.dialog.open(GraphConfigComponent, {
-            position: { top: '60px' },
-            minWidth: '1090px', width: '1090px',
+            position: { top: '30px' },
+            // minWidth: '1090px', 
+            // width: '1090px',
+            maxWidth: '90vw', 
+            width: '90vw',
+            maxHeight: '90vh',
             data: { type: type }
         });
         dialogRef.afterClosed().subscribe();
@@ -73,7 +81,8 @@ export class SetupComponent {
             templayout.showdev = true;
         }
         let dialogRef = this.dialog.open(LayoutPropertyComponent, {
-            position: { top: '60px' },
+            position: { top: '30px' },
+            maxHeight: '90vh',
             data: <ILayoutPropertyData>{ layout: templayout, views: hmi.views, securityEnabled: this.projectService.isSecurityEnabled() }
         });
         dialogRef.afterClosed().subscribe(result => {
@@ -102,7 +111,7 @@ export class SetupComponent {
     onSettings() {
         this.onNoClick();
         let dialogRef = this.dialog.open(AppSettingsComponent, {
-            position: { top: '60px' },
+            position: { top: '40px' },
         });
         dialogRef.afterClosed().subscribe(result => {
         });
