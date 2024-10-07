@@ -123,7 +123,7 @@
     "dlg.linkproperty-title": "Make Hyperlink",
     "dlg.linkproperty-url": "Hyperlink URL",
 
-    "dlg.login-title": "Sign in...",
+    "dlg.login-title": "Sign in to SCADA",
     "dlg.logout-btn": "Sign out",
 
     "dlg.ok": "OK",

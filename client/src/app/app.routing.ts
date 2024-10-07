@@ -18,9 +18,12 @@ import { DEVICE_READONLY } from './_models/hmi';
 import { ReportListComponent } from './reports/report-list/report-list.component';
 
 const appRoutes: Routes = [
-    { path: '', component: HomeComponent},//, canActivate: [AuthGuard] },
-    { path: 'home', component: HomeComponent},//, canActivate: [AuthGuard] },
-    { path: 'home/:viewName', component: HomeComponent},//, canActivate: [AuthGuard] },
+    { path: '', component: HomeComponent, canActivate: [AuthGuard] },
+    // { path: '', component: HomeComponent},//, canActivate: [AuthGuard] },
+    { path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
+    // { path: 'home', component: HomeComponent},//, canActivate: [AuthGuard] },
+    { path: 'home/:viewName', component: HomeComponent, canActivate: [AuthGuard] },
+    // { path: 'home/:viewName', component: HomeComponent},//, canActivate: [AuthGuard] },
     { path: 'editor', component: EditorComponent, canActivate: [AuthGuard]},
     { path: 'lab', component: LabComponent, canActivate: [AuthGuard] },
     { path: 'device', component: DeviceComponent, canActivate: [AuthGuard] },
