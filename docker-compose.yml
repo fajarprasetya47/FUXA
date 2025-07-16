@@ -1,0 +1,12 @@
+services:
+  fuxa:
+    image: scada-linkra:latest
+    container_name: scada
+    restart: unless-stopped
+    volumes:
+      - '/home/linkra/FUXA/server/appdata:/usr/src/app/FUXA/server/_appdata'
+      - '/home/linkra/FUXA/server/db:/usr/src/app/FUXA/server/_db'
+      - '/home/linkra/FUXA/server/logs:/usr/src/app/FUXA/server/_logs'
+      - '/home/linkra/FUXA/server/images:/usr/src/app/FUXA/server/_images'
+    ports:
+      - '1881:1881'
