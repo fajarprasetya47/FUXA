@@ -17,5 +17,7 @@ npm run build
 Build client first
 scp -r -P 9341 "client/dist" dev@10.104.0.4:/home/dev
 
+scp -r -P 22 "dist" root@192.168.200.226:/home/fuxa/FUXA/client
+
 docker cp /home/dev/dist scada:/usr/src/app/FUXA/client
 docker restart scada
