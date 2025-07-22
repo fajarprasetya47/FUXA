@@ -25,12 +25,14 @@ module.exports = {
     },
     start: function () {
         return runtime.start().then(function () {
-            logger.info('FUXA started!');
+            logger.info('SCADA started!');
+            // logger.info('FUXA started!');
         });
     },
     stop: function () {
         return runtime.stop().then(function () {
-            logger.info('FUXA stopped!');
+            logger.info('SCADA stopped!');
+            // logger.info('FUXA stopped!');
         })
     },
 

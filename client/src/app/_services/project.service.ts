@@ -93,7 +93,7 @@ export class ProjectService {
                 // this.notifySaveError(msg);
             }
         }, err => {
-            console.error('FUXA onRefreshProject error', err);
+            console.error('SCADA onRefreshProject error', err);
         });
         return true;
     }
@@ -124,7 +124,7 @@ export class ProjectService {
                 this.notifyToLoadHmi();
             }
         }, err => {
-            console.error('FUXA load error', err);
+            console.error('SCADA load error', err);
         });
     }
 
@@ -805,7 +805,7 @@ export class ProjectService {
     }
 
     private notifySaveError(err: any) {
-        console.error('FUXA notifySaveError error', err);
+        console.error('SCADA notifySaveError error', err);
         let msg = null;
         this.translateService.get('msg.project-save-error').subscribe((txt: string) => { msg = txt; });
         if (err.status === 401) {
@@ -821,7 +821,7 @@ export class ProjectService {
     }
 
     private notifyServerError() {
-        console.error('FUXA notifyServerError error');
+        console.error('SCADA notifyServerError error');
         let msg = null;
         this.translateService.get('msg.server-connection-error').subscribe((txt: string) => { msg = txt; });
         if (msg) {
@@ -836,7 +836,7 @@ export class ProjectService {
     private notifyError(msgCode: string) {
         this.translateService.get(msgCode).subscribe((txt: string) => { msgCode = txt; });
         if (msgCode) {
-            console.error(`FUXA Error: ${msgCode}`);
+            console.error(`SCADA Error: ${msgCode}`);
             this.toastr.error(msgCode, '', {
                 timeOut: 3000,
                 closeButton: true,

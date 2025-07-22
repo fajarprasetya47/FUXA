@@ -106,7 +106,8 @@ function Report(_property, _runtime) {
         return new Promise(async function (resolve, reject) {
             try {
                 let docDefinition = {...report.docproperty };
-                docDefinition['header'] = { text: 'FUXA by frangoteam', style:[{fontSize: 6}]};
+                docDefinition['header'] = { text: 'SCADA by Linkra', style:[{fontSize: 6}]};
+                // docDefinition['header'] = { text: 'FUXA by frangoteam', style:[{fontSize: 6}]};
                 docDefinition['footer'] = function(currentPage, pageCount) { 
                     return { text: currentPage.toString() + ' / ' + pageCount, style:[{alignment: 'right', fontSize: 8}]} ; 
                 },                

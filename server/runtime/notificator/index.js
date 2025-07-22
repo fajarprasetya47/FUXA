@@ -234,7 +234,8 @@ function NotificatorManager(_runtime) {
                                 if (notification.checkToNotify(time, statusChanged)) {
                                     try {
                                         // get alarms summary in text format
-                                        var alarmsSummary = runtime.alarmsMgr.getAlarmsString(stkey) || 'FUXA Alarms Error!';
+                                        var alarmsSummary = runtime.alarmsMgr.getAlarmsString(stkey) || 'SCADA Alarms Error!';
+                                        // var alarmsSummary = runtime.alarmsMgr.getAlarmsString(stkey) || 'FUXA Alarms Error!';
                                         var mail = new MailMessage(null, notification.receiver, notification.name, alarmsSummary);
                                         runtime.notificatorMgr.sendMail(mail, null).then(function () {
                                             notification.setNotify(time, stkey);

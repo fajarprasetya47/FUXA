@@ -40,8 +40,9 @@ nopt.invalidHandler = function(k,v,t) {
 var parsedArgs = nopt(knownOpts, shortHands, process.argv, 2);
 
 if (parsedArgs.help) {
-    console.log("FUXA v" + FUXA.version());
-    console.log("Usage: fuxa [-?] [--port PORT] [--userDir DIR]");
+    console.log("SCADA v" + FUXA.version());
+    // console.log("FUXA v" + FUXA.version());
+    console.log("Usage: scada [-?] [--port PORT] [--userDir DIR]");
     console.log("");
     console.log("Options:");
     console.log("  -p, --port     PORT  port to listen on");
@@ -172,9 +173,11 @@ if (!fs.existsSync(settings.logDir)) {
 logger.init(settings);
 const version = FUXA.version();
 if (version.indexOf('beta') > 0) {
-    logger.warn('FUXA V.' + version);
+    logger.warn('SCADA V.' + version);
+    // logger.warn('FUXA V.' + version);
 } else {
-    logger.info('FUXA V.' + version);
+    logger.info('SCADA V.' + version);
+    // logger.info('FUXA V.' + version);
 }
 
 // Check storage Database dir
@@ -228,7 +231,8 @@ settings.uiHost = settings.uiHost || "0.0.0.0";
 
 // Wait ending initialization
 events.once('init-runtime-ok', function () {
-    logger.info('FUXA init in  ' + utils.endTime(startTime) + 'ms.');
+    logger.info('SCADA init in  ' + utils.endTime(startTime) + 'ms.');
+    // logger.info('FUXA init in  ' + utils.endTime(startTime) + 'ms.');
     startFuxa();
 });
 
@@ -238,9 +242,11 @@ try {
 } catch(err) {
     if (err.code == 'unsupported_version') {
         logger.error('Unsupported version of node.js:', process.version);
-        logger.error('FUXA requires node.js v6 or later');
+        logger.error('SCADA requires node.js v6 or later');
+        // logger.error('FUXA requires node.js v6 or later');
     } else if (err.code == 'not_built') {
-        logger.error('FUXA has not been built. See README.md for details');
+        logger.error('SCADA has not been built. See README.md for details');
+        // logger.error('FUXA has not been built. See README.md for details');
     } else {
         logger.error('Failed to start server:');
         if (err.stack) {
@@ -346,7 +352,8 @@ function startFuxa() {
             });
             server.listen(settings.uiPort, settings.uiHost, function () {
                 settings.serverPort = server.address().port;
-                process.title = 'FUXA';
+                process.title = 'SCADA';
+                // process.title = 'FUXA';
                 logger.info('WebServer is running ' + getListenPath());
             });
         } else {
@@ -381,6 +388,7 @@ process.on('SIGINT', function () {
     FUXA.stop().then(function() {
         process.exit();
     });
-    logger.info('FUXA end!');
+    logger.info('SCADA end!');
+    // logger.info('FUXA end!');
     process.exit();
 });
